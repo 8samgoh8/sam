@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Information - Internet of Things</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #e8eaf6;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Internet of Things (IoT)</h1>
+            <p>Connecting the Physical and Digital World</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>What is IoT?</h2>
+                <p>
+                    The Internet of Things (IoT) refers to the network of physical objects—"things"—that are embedded 
+                    with sensors, software, and other technologies for the purpose of connecting and exchanging data 
+                    with other devices and systems over the internet. These devices range from ordinary household 
+                    objects to sophisticated industrial tools.
+                </p>
+                <p>
+                    With more than 7 billion connected IoT devices today, experts are expecting this number to grow 
+                    to 22 billion by 2025. IoT is revolutionizing how we live, work, and interact with our environment.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Key Components of IoT</h2>
+                <div class="cards">
+                    <div class="card">
+                        <span class="icon">📡</span>
+                        <h3>Sensors</h3>
+                        <p>Devices that detect and measure physical properties like temperature, motion, light, humidity, 
+                           and pressure. They collect real-world data and convert it into digital signals.</p>
+                    </div>
+                    <div class="card">
+                        <span class="icon">🔗</span>
+                        <h3>Connectivity</h3>
+                        <p>Various communication protocols like WiFi, Bluetooth, Zigbee, LoRaWAN, and cellular networks 
+                           that enable devices to transmit data to the cloud or other devices.</p>
+                    </div>
+                    <div class="card">
+                        <span class="icon">☁️</span>
+                        <h3>Cloud Computing</h3>
+                        <p>Infrastructure that stores, processes, and analyzes the massive amounts of data generated 
+                           by IoT devices, providing scalability and accessibility.</p>
+                    </div>
+                    <div class="card">
+                        <span class="icon">🤖</span>
+                        <h3>Data Processing</h3>
+                        <p>Advanced analytics and machine learning algorithms that transform raw data into actionable 
+                           insights and enable intelligent decision-making.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Common IoT Devices</h2>
+                <div class="highlight-box">
+                    <h3>Smart Home Devices</h3>
+                    <ul>
+                        <li><strong>Smart Thermostats:</strong> Learn your preferences and optimize heating/cooling</li>
+                        <li><strong>Smart Lights:</strong> Control lighting remotely and set automated schedules</li>
+                        <li><strong>Smart Locks:</strong> Secure your home with remote access control</li>
+                        <li><strong>Smart Cameras:</strong> Monitor your property from anywhere</li>
+                        <li><strong>Voice Assistants:</strong> Control devices with voice commands</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Wearable Technology</h3>
+                    <ul>
+                        <li><strong>Fitness Trackers:</strong> Monitor steps, heart rate, and activity levels</li>
+                        <li><strong>Smartwatches:</strong> Notifications, health tracking, and app integration</li>
+                        <li><strong>Health Monitors:</strong> Track vital signs and medical conditions</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Industrial IoT (IIoT)</h3>
+                    <ul>
+                        <li><strong>Manufacturing Sensors:</strong> Monitor production lines and equipment</li>
+                        <li><strong>Predictive Maintenance:</strong> Detect equipment failures before they occur</li>
+                        <li><strong>Supply Chain Tracking:</strong> Real-time visibility of goods and inventory</li>
+                        <li><strong>Energy Management:</strong> Optimize power consumption in facilities</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>IoT Communication Protocols</h2>
+                <p>Different IoT devices use various protocols depending on their requirements:</p>
+                <ul>
+                    <li><strong>WiFi:</strong> High bandwidth, common in home automation</li>
+                    <li><strong>Bluetooth/BLE:</strong> Short-range, low power consumption for wearables</li>
+                    <li><strong>Zigbee:</strong> Low power, mesh networking for smart home devices</li>
+                    <li><strong>LoRaWAN:</strong> Long-range, low power for wide-area networks</li>
+                    <li><strong>MQTT:</strong> Lightweight messaging protocol for IoT communication</li>
+                    <li><strong>CoAP:</strong> Constrained Application Protocol for resource-limited devices</li>
+                    <li><strong>5G/LTE:</strong> High-speed cellular connectivity for mobile IoT</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Benefits of IoT</h2>
+                <div class="cards">
+                    <div class="card">
+                        <span class="icon">⚡</span>
+                        <h3>Efficiency</h3>
+                        <p>Automate routine tasks and optimize resource usage, saving time and reducing waste.</p>
+                    </div>
+                    <div class="card">
+                        <span class="icon">💰</span>
+                        <h3>Cost Savings</h3>
+                        <p>Reduce operational costs through predictive maintenance and energy optimization.</p>
+                    </div>
+                    <div class="card">
+                        <span class="icon">📊</span>
+                        <h3>Data Insights</h3>
+                        <p>Collect and analyze real-time data for better decision-making and business intelligence.</p>
+                    </div>
+                    <div class="card">
+                        <span class="icon">🎯</span>
+                        <h3>Improved Quality</h3>
+                        <p>Monitor processes in real-time to ensure quality standards and detect issues early.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Security Considerations</h2>
+                <p>
+                    As IoT devices proliferate, security becomes increasingly critical. Key security concerns include:
+                </p>
+                <ul>
+                    <li><strong>Device Authentication:</strong> Ensuring only authorized devices can access the network</li>
+                    <li><strong>Data Encryption:</strong> Protecting data in transit and at rest</li>
+                    <li><strong>Secure Updates:</strong> Regularly updating firmware to patch vulnerabilities</li>
+                    <li><strong>Network Segmentation:</strong> Isolating IoT devices from critical systems</li>
+                    <li><strong>Privacy Protection:</strong> Safeguarding personal data collected by devices</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Future of IoT</h2>
+                <p>
+                    The future of IoT is bright and full of possibilities. Emerging trends include:
+                </p>
+                <ul>
+                    <li><strong>Edge Computing:</strong> Processing data closer to the source for faster response times</li>
+                    <li><strong>AI Integration:</strong> Enhanced machine learning capabilities for smarter devices</li>
+                    <li><strong>5G Networks:</strong> Faster, more reliable connectivity for IoT applications</li>
+                    <li><strong>Digital Twins:</strong> Virtual replicas of physical systems for simulation and optimization</li>
+                    <li><strong>Smart Cities:</strong> Urban infrastructure enhanced with IoT for better living</li>
+                    <li><strong>Healthcare IoT:</strong> Remote patient monitoring and personalized medicine</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 IoT Information Hub | Connecting the Future</p>
+        </footer>
+    </div>
+</body>
+</html>
