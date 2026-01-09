@@ -71,7 +71,7 @@
 
         .section p {
             margin-bottom: 15px;
-            text-align: justify;
+            text-align: left;
         }
 
         .cards {
@@ -312,8 +312,11 @@
         </div>
 
         <footer>
-            <p>&copy; 2026 IoT Information Hub | Connecting the Future</p>
+            <p>&copy; <span id="year"></span> IoT Information Hub | Connecting the Future</p>
         </footer>
     </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
